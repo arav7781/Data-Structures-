@@ -1,0 +1,54 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing:border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+h1{
+    font-weight: normal;
+}
+.shape{
+    margin-top: 10px;
+    margin-left: 10px;/*margin collapse krne ke liye*/
+    /*dono square ke bich mai jo double margin gap aara tha usko hta diya*/
+    height: 200px;
+    width: 200px;
+    border: 1px solid black;
+    display: flex;/*iske bina center mai item nahi jayengi*/
+    align-items: center;
+    justify-content: center;
+}
+/*box mai koi flex nhi diya h isliye 1,2 box upside down hai*/
+#circle{
+    border-radius: 50%;
+}
+#diamond{
+    rotate: 45deg;
+    margin-top: 50px;
+}
+#diamond h1{
+    rotate: -45deg;
+    /*2 ko thik krne ke liye*/
+}
+#square:hover{
+    background-color: brown;
+}
+#circle:hover{
+    background-color: aqua;
+}
+#diamond:hover{
+    background-color: blue;
+}
+/*hover matlab cursor uspe leke jayenge toh color dikhega*/
